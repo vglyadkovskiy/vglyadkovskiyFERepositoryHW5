@@ -62,7 +62,27 @@
             <input id="chb22" type="checkbox" name="form" value="2" />action<br />
             <input id="chb23" type="checkbox" name="form" value="3" />charset<br />
             <input id="chb24" type="checkbox" name="form" value="4" />validate<br /></p>
-            <p><button id="buttonResult" type="button" name="result" class="result btn btn-success"">Результат</button></p>
+            
+            <p><button id="buttonResult" type="button" name="result" class="result btn btn-success" data-toggle="modal" data-target="#modalResult">Результат</button></p>            
+            
+               <div id="modalResult" class="modal">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal">×</button>
+                           <h4>Your RESULT:</h4>
+                        </div>
+                        <div id="res" class="modal-body">
+                           Содержимое модального окна
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </div>   
+               
          </form>   
       </div>   
       

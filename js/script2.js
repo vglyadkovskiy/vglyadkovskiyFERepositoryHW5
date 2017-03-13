@@ -56,7 +56,8 @@ function clickResultButton(){
    
             bres.click(function(){
                              
-               alert("Your RESULT: You score: " + (Number(chekRadio()) + Number(chekChekBox())) + " points. " + "You have " + (Number(chekRadio()) + Number(chekChekBox()))/5*100 + " % correct answers.");
+               $("#res").html("You score: " + (Number(chekRadio()) + Number(chekChekBox())) + " points. " + "<br />" + "You have " + (Number(chekRadio()) + Number(chekChekBox()))/5*100 + " % correct answers.");
+               
             })
 }
 
