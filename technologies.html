@@ -3,35 +3,45 @@
    <head>
      <title>Web-технологии</title>
      <meta charset="utf-8" />
+     <link href="css/bootstrap.css" rel="stylesheet" />
+     <!--
      <link rel="stylesheet" href="css/style.css" />
+     -->
    </head>
    <body>
+   <div class="container">
       <header>
-         <a href="index.html"><img src="img/webLogo.png" alt="Web-технологии" id="logo" /></a>
-         <h1>Основы Web-технологий</h1>
-        <nav>
-            
-             <ul class="ul1">
-               <li><a href="index.html">Главная</a></li>
-               <li class="webtech"><a href="technologies.html">Web-технологии</a>
-                  <ul class="webtech">
-                     <li><a href="html5.html">HTML5</a></li>
-                     <li><a href="css3.html">CSS3</a></li>
-                     <li><a href="javaScript.html">JavaScript</a></li>
-                  </ul>
-               </li>
-               <li><a href="calculator.html">Калькулятор</a></li>
-               <li><a href="test.html">Тест</a></li>
-            </ul>
-            
-         </nav>
+         <div class="row">            
+            <div class="col-xs-3"><a href="index.html"><img src="img/webLogo.png" class="img-thumbnail img-responsive" alt="Web-технологии" id="logo" /></a></div>
+            <div class="col-xs-9"><h1>Основы Web-технологий</h1></div>            
+            <div class="col-xs-9 col-xs-offset-3">
+                  <nav>                     
+                     <ul class="ul1 list-inline">
+                        <li><a href="index.html">Главная</a></li>                       
+                           <div class="dropdown btn-group">
+                              <li class="webtech"><a href="technologies.html">Web-технологии</a>                       
+                              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-color: white; margin: 5px; padding: 5px;"><span class="caret"></span>
+                              </button>                       
+                                 <ul class="webtech dropdown-menu">
+                                    <li><a href="html5.html">HTML5</a></li>
+                                    <li><a href="css3.html">CSS3</a></li>
+                                    <li><a href="javaScript.html">JavaScript</a></li>
+                                 </ul>
+                              </li>                       
+                           </div>                        
+                        <li><a href="calculator.html">Калькулятор</a></li>
+                        <li><a href="test.html">Тест</a></li>
+                     </ul>                     
+                  </nav>
+            </div>
+         </div>   
       </header>
       
-      <div class="div1">
+      <div class="div1 col-xs-12" style="text-align: justify;">
          <p>Web-технологии можно условно разделить на две пересекающиеся группы: <em>клиентские</em> и <em>серверные</em></p>
          <ul>
             <li>Клиентские:
-               <dl>
+               <dl class="dl-horizontal">
                   <dt><strong>HTML</strong></dt>
                   <dd>стандартный язык разметки Web-страниц</dd>
                   <dt><strong>CSS</strong></dt>
@@ -41,7 +51,7 @@
                </dl>
             </li>
             <li>Серверные:
-               <dl>
+               <dl class="dl-horizontal">
                   <dt><strong>ASP.NET (C#)</strong></dt>
                   <dd>технология создания Web-приложений от компании Microsoft</dd>
                   <dt><strong>JSP (Java)</strong></dt>
@@ -53,12 +63,15 @@
          </ul>
       </div>    
       
-      <footer>
+      <footer class="col-xs-12" style="text-align: center">
          <address>
             <a href="mailto:glycerine08@gmail.com">Пишите: glycerine08@gmail.com</a>
          </address>
          <p>© Глядковский В.Ю., 2017</p>
       </footer>
       
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/bootstrap.js"></script>
+      </div>
    </body>
 </html>

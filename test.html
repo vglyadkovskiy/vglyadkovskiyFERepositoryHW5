@@ -3,30 +3,39 @@
    <head>
      <title>Тест</title>
      <meta charset="utf-8" />
-     <link rel="stylesheet" href="css/style.css" />
+     <link href="css/bootstrap.css" rel="stylesheet" />
      
    </head>
    <body>
-     <header>
-         <a href="index.html"><img src="img/webLogo.png" alt="Web-технологии" id="logo" /></a>
-         <h1>Основы Web-технологий</h1>
-         <nav>
-           <ul class="ul1">
-               <li><a href="index.html">Главная</a></li>
-               <li class="webtech"><a href="technologies.html">Web-технологии</a>
-                  <ul class="webtech">
-                     <li><a href="html5.html">HTML5</a></li>
-                     <li><a href="css3.html">CSS3</a></li>
-                     <li><a href="javaScript.html">JavaScript</a></li>
-                  </ul>
-               </li>
-               <li><a href="calculator.html">Калькулятор</a></li>
-               <li><a href="test.html">Тест</a></li>
-            </ul>
-         </nav>
+      <div class="container">
+      <header>
+         <div class="row">            
+               <div class="col-xs-3"><a href="index.html"><img src="img/webLogo.png" class="img-thumbnail img-responsive" alt="Web-технологии" id="logo" /></a></div>
+               <div class="col-xs-9"><h1>Основы Web-технологий</h1></div>            
+               <div class="col-xs-9 col-xs-offset-3">
+                  <nav>                     
+                     <ul class="ul1 list-inline">
+                        <li><a href="index.html">Главная</a></li>                       
+                           <div class="dropdown btn-group">
+                              <li class="webtech"><a href="technologies.html">Web-технологии</a>                       
+                              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-color: white; margin: 5px; padding: 5px;"><span class="caret"></span>
+                              </button>                       
+                                 <ul class="webtech dropdown-menu">
+                                    <li><a href="html5.html">HTML5</a></li>
+                                    <li><a href="css3.html">CSS3</a></li>
+                                    <li><a href="javaScript.html">JavaScript</a></li>
+                                 </ul>
+                              </li>                       
+                           </div>                        
+                        <li><a href="calculator.html">Калькулятор</a></li>
+                        <li><a href="test.html">Тест</a></li>
+                     </ul>                     
+                  </nav>
+               </div>
+         </div>   
       </header>
       
-      <div class="div1">
+      <div class="div1 col-xs-12" style="text-align: justify;">
          <form id="test" name="fetest">
             <p>Какой тег предназначен для создания ссылок:<br />
             <input id="rad11" type="radio" name="link" value="1" />&lt;a><br />
@@ -53,11 +62,11 @@
             <input id="chb22" type="checkbox" name="form" value="2" />action<br />
             <input id="chb23" type="checkbox" name="form" value="3" />charset<br />
             <input id="chb24" type="checkbox" name="form" value="4" />validate<br /></p>
-            <p><button id="buttonResult" type="button" name="result" class="result">Результат</button></p>
+            <p><button id="buttonResult" type="button" name="result" class="result btn btn-success"">Результат</button></p>
          </form>   
       </div>   
       
-      <footer>
+      <footer class="col-xs-12" style="text-align: center">
          <address>
             <a href="mailto:glycerine08@gmail.com">Пишите: glycerine08@gmail.com</a>
          </address>
@@ -66,5 +75,7 @@
       
       <script src="js/jquery-3.1.1.js"></script>
       <script src="js/script2.js"></script>
+      <script src="js/bootstrap.js"></script>
+      </div> 
    </body>
 </html>
